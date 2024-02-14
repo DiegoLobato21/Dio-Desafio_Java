@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class NomeUsuario {
     static Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-    static String gravarNome;
+    private String gravarNome;
 
 
 
 
-    public     NomeUsuario (String nome, String sobrenome) {
+    public  String setGravarNome (String nome, String sobrenome) {
 
         System.out.println("Qual seu nome?");
         nome = scanner.next();
@@ -19,12 +19,12 @@ public class NomeUsuario {
 
         this.gravarNome = nome + " " + sobrenome;
 
+        return this.gravarNome;
+
 
     }
 
-    public  String getGravarNome(){
-        return  gravarNome;
-    }
+
 
 
 
